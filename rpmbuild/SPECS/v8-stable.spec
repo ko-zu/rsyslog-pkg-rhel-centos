@@ -37,7 +37,8 @@ BuildRequires: automake
 BuildRequires: autoconf >= 2.52
 BuildRequires: libtool
 %if %{?rhel} >= 6
-BuildRequires: libfastjson-devel
+BuildRequires: libfastjson-devel >= 0.99.3
+Requires: libfastjson >= 0.99.3
 %else
 BuildRequires: json-c-devel
 %endif
